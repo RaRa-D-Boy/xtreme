@@ -14,14 +14,30 @@
   }
 }
 
+@font-face {
+  font-family: "Apercu";
+  src: url("/apercu_regular_pro.otf") format("opentype");
+  weight: 100 900;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Apercu",
+  /* Arial, Helvetica, sans-serif; */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.blinking-element {
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
