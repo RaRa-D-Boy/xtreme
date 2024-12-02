@@ -31,7 +31,7 @@ const UltraPage = () => {
             viewport={{ once: true }}
             className="text-[12px] uppercase font-thin my-5 leading-6 "
           >
-            capsule 2
+            X[SWAG]
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -40,19 +40,20 @@ const UltraPage = () => {
             viewport={{ once: true }}
             className="text-4xl md:text-[76px] font-normal "
           >
-            Burmese Python
+            Elevate Your Style
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className="font-thin max-w-screen-md py-4"
+            className="font-thin max-w-screen-md py-5"
           >
-            Our regenerative snakeskin collection was designed with the planet
-            in mind—from heel to toe, sole to laces. Now featuring our best
-            selling silhouettes, we’ve expanded our Burmese Python collection to
-            include two new styles: Monza and Rail.{" "}
+            Discover the essence of modern fashion with our Xtrim collection.
+            Each piece is meticulously crafted to blend luxury with comfort,
+            ensuring you not only look good but feel great. From chic
+            silhouettes to bold patterns, our collection is designed for the
+            trendsetter in you.
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 50 }}

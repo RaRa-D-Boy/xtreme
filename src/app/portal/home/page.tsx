@@ -32,7 +32,7 @@ const HomePage = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            capsule 2
+            X[SWAG]
           </motion.div>
           <motion.div
             className="text-4xl md:text-[76px] font-normal "
@@ -41,23 +41,29 @@ const HomePage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            Burmese Python
+            Xtrim
           </motion.div>
-          <motion.div className="font-thin max-w-screen-md text-sm md:text-base py-4 pr-4"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}>
-            Our regenerative snakeskin collection was designed with the planet
-            in mind—from heel to toe, sole to laces. Now featuring our best
-            selling silhouettes, we’ve expanded our Burmese Python collection to
-            include two new styles: Monza and Rail.{" "}
+          <motion.div
+            className="font-thin max-w-screen-md text-sm md:text-base py-4 pr-4"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
+            Our curated collection celebrates the intersection of art and
+            fashion, showcasing models in dynamic poses that embody the spirit
+            of creativity. Each piece is designed to inspire self-expression,
+            allowing wearers to make a bold statement. From striking silhouettes
+            to vibrant colors, our collection invites you to explore the art of
+            style and embrace your individuality.{" "}
           </motion.div>
-          <motion.div className="flex gap-4 items-center "
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.1 }}
-          viewport={{ once: true }}>
+          <motion.div
+            className="flex gap-4 items-center "
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.1 }}
+            viewport={{ once: true }}
+          >
             <button className="text-sm  font-thin my-5 leading-6 group">
               <div className="flex items-center">
                 <div className="blinking-element mr-2 w-1 h-1 rounded-full group-hover:w-0 group-hover:bg-transparent transition-all group-hover:h-0 bg-white"></div>

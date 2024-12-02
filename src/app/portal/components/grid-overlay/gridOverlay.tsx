@@ -1,5 +1,5 @@
 "use client" 
-import React, { useEffect } from "react";
+import React from "react";
 
 interface LineConfig {
   x1: string;
@@ -15,12 +15,6 @@ interface GridOverlayProps {
 }
 
 export const GridOverlay: React.FC<GridOverlayProps> = ({ lines, opacity, color }) => {
-  const app = opacity;
-
-//   useEffect(() => {
-//     alert(app);
-//   }, [app]);
-
 
   return (
     <svg

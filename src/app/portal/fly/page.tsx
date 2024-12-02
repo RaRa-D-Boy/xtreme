@@ -4,6 +4,13 @@ import Image from "next/image";
 import { GridOverlay } from "../components/grid-overlay/gridOverlay";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { motion } from "framer-motion";
+
+interface GridProps {
+  image: string;
+  tag: string;
+  title: string;
+  price: string;
+}
 const FlyPage = () => {
   const [pageWidth, setPageWidth] = useState(0);
   const gridLines1 = [
@@ -21,45 +28,39 @@ const FlyPage = () => {
     { x1: "50%", y1: "0", x2: "50%", y2: "100%" },
   ];
 
-  const grids = [
+  const grids= [
     {
       image: "/imgNew7.jpg",
-      tag: "new",
-      title: "Monza Velcro",
+      tag: "X[Style]",
+      title: "I-flawa",
       price: "$596.00",
     },
     {
       image: "/imgNew12.jpg",
-      tag: "new",
-      title: "Monza Velcro",
+      tag: "X[Dope]",
+      title: "Jeze",
       price: "$596.00",
     },
     {
       image: "/imgNew11.jpg",
-      tag: "new",
-      title: "Monza Velcro",
+      tag: "X[Elegance]",
+      title: "Dark Red",
       price: "$596.00",
     },
     {
       image: "/imgNew8.jpg",
-      tag: "new",
-      title: "Monza Velcro",
+      tag: "X[Pose]",
+      title: "Kunta",
       price: "$596.00",
     },
   ];
 
-  // useEffect(() => {
-  //   const pagewidth = window.innerWidth;
-  //   setPageWidth(pagewidth);
-  // }, [window, pageWidth]);
-
-
   useEffect(() => {
     if (typeof window !== "undefined") {
-        const pagewidth = window.innerWidth;
-        setPageWidth(pagewidth);
+      const pagewidth = window.innerWidth;
+      setPageWidth(pagewidth);
     }
-}, []); 
+  }, []);
 
   return (
     <section className="relative isolate overflow-hidden h-auto bg-[#e6e3e6]">
@@ -84,11 +85,11 @@ const FlyPage = () => {
           />
           <div className="  h-full justify-end">
             <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
-              {grids.map((item: any, key: number) => (
+              {grids.map((item: GridProps, key: number) => (
                 <div key={key} className="sm:aspect-square flex flex-col ">
                   <motion.div
-                    initial={{  y: 50 }}
-                    whileInView={{  y: 0 }}
+                    initial={{ y: 50 }}
+                    whileInView={{ y: 0 }}
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true }}
                     className="relative flex-grow min-h-[500px]"
@@ -100,12 +101,14 @@ const FlyPage = () => {
                       className="p-8 object-cover"
                     />
                   </motion.div>
-                  <motion.div className="px-8 flex flex-col justify-end mb-5 z-10"
+                  <motion.div
+                    className="px-8 flex flex-col justify-end mb-5 z-10"
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.2 }}
-                    viewport={{ once: true }}>
-                    <button className="bg-white rounded-lg w-8 h-auto p-1 text-blue-500 text-center uppercase font-semibold text-[10px]">
+                    viewport={{ once: true }}
+                  >
+                    <button className="bg-white rounded-lg w-20 h-auto p-1 text-blue-500 text-center uppercase font-semibold text-[10px]">
                       {item.tag}
                     </button>
                     <div className="text-black text-[11px] font-thin my-2">

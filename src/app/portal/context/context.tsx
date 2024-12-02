@@ -17,13 +17,13 @@ const ContextPage = () => {
 
   const grids = [
     {
-      tag: "capsule 2",
-      title: "Burmese Python",
+      tag: "X[SWAG]",
+      title: "Unleash Your Style",
       description:
-        "Our regenerative snakeskin collection was designed with the planet in mind—from heel to toe, sole to laces. Now featuring our best selling silhouettes, we’ve expanded our Burmese Python collection to include two new styles: Monza and Rail.",
+        "Step into the spotlight with our X[SWAG] collection, where bold meets beautiful. Each piece is designed to make a statement, combining edgy designs with high-quality materials. Whether you're hitting the streets or making an entrance, X[SWAG] is your go-to for standout fashion.",
     },
     {
-      tag: "capsule 2",
+      tag: "X[SWAG]",
       title: "Burmese Python",
       description:
         "Our regenerative snakeskin collection was designed with the planet in mind—from heel to toe, sole to laces. Now featuring our best selling silhouettes, we’ve expanded our Burmese Python collection to include two new styles: Monza and Rail.",
@@ -39,7 +39,7 @@ const ContextPage = () => {
               <div
                 className={`${
                   key === 0
-                    ? " ml-[12%] absolute bottom-50 left-0 px-6 w-full md:w-[50%] text-black"
+                    ? " ml-[12%] absolute bottom-50 left-0 px-6 w-full md:w-[80%] text-black"
                     : "absolute bottom-0 left-0 pl-20 md:pl-0 lg:px-10 text-black md:ml-[50%] "
                 }`}
               >
@@ -67,7 +67,7 @@ const ContextPage = () => {
                   viewport={{ once: true }}
                   className={`${
                     key === 0
-                      ? " text-sm font-thin my-5 leading-6 px-0 w-[80%]"
+                      ? " text-sm font-thin my-5 leading-6 px-0 md:w-[40%]"
                       : "text-sm font-thin my-5 leading-6 w-full"
                   }`}
                 >

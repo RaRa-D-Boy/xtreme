@@ -4,6 +4,12 @@ import Image from "next/image";
 import { GridOverlay } from "../components/grid-overlay/gridOverlay";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
+interface GridProps {
+  image: string;
+  tag: string;
+  title: string;
+  price: string;
+}
 const GravityPage = () => {
   const gridLines1 = [
     { x1: "0%", y1: "0", x2: "0%", y2: "100%" },
@@ -17,14 +23,14 @@ const GravityPage = () => {
   const grids = [
     {
       image: "/imgNew18.jpg",
-      tag: "new",
-      title: "Monza Velcro",
+      tag: "Style",
+      title: "Red Rebel",
       price: "$596.00",
     },
     {
       image: "/imgNew17.jpg",
-      tag: "new",
-      title: "Monza Velcro",
+      tag: "Dope",
+      title: "Astro Twin",
       price: "$596.00",
     },
   ];
@@ -46,7 +52,7 @@ const GravityPage = () => {
           />
           <div className="  h-full justify-end">
             <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
-              {grids.map((item: any, key: number) => (
+              {grids.map((item: GridProps, key: number) => (
                 <div key={key} className="md:aspect-square flex flex-col">
                   <div className="relative flex-grow min-h-[500px]">
                     <Image
@@ -58,7 +64,7 @@ const GravityPage = () => {
                     />
                   </div>
                   <div className="px-8 flex flex-col justify-end mb-5 z-10">
-                    <button className="bg-white rounded-lg w-8 h-auto p-1 text-blue-500 text-center uppercase font-semibold text-[10px]">
+                    <button className="bg-white rounded-lg w-12 h-auto p-1 text-blue-500 text-center uppercase font-semibold text-[10px]">
                       {item.tag}
                     </button>
                     <div className="text-black text-[11px] font-thin my-2">
